@@ -1,0 +1,149 @@
+@font-face {font-family: rodchenko; src: url(assets/fonts/rc.ttf);}
+@font-face {font-family: exo; src: url(assets/fonts/exo/exo.ttf);}
+a {text-decoration: none; color: black; font-family: rodchenko;}
+a:hover {text-decoration: none; color: white; font-family: rodchenko;}
+b {color: black; font-family: exo;}
+.bottombit{padding: -100px; position: static; left: 0; bottom: 0; width: 100%; color: white; text-align: center; font-family: null;}
+html {background: url(assets/images/bgb.png) no-repeat center center fixed;  -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+
+
+/*gridding*/
+	/*inv page*/
+@media (max-width: 1280px) {
+.grid-container {display: grid; gap: 10px; grid-template-columns: 100%; width: 	auto;}
+.grid-item {padding: 10px; margin-right: 5px; font-size: auto; text-align: 	center;}
+.element {max-width: fit-content; margin-left: auto; margin-right: auto; position: relative;}
+}
+@media (min-width: 1280px) {
+.grid-container {display: grid; gap: 10px; grid-template-columns: 50% 50%; 	width: 	auto;}
+.grid-item {padding: 10px; margin-right: 5px; font-size: auto; text-align: 	center;}
+.element {max-width: fit-content; margin-left: auto; margin-right: auto; position: relative;}
+}
+
+/*slideshows*/
+* {box-sizing: border-box}
+img {vertical-align: middle;}
+.S1, .S2 {display: none}
+.prev, .next {cursor: pointer; position: absolute; top: 50%; width: auto; 	padding: 16px; margin-top: -22px; color: white; font-weight: bold; font-size: 	18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none;}
+.next {left: 0; border-radius: 3px 0 0 3px;}
+.prev {right: 0; border-radius: 3px 0 0 3px;}
+.prev:hover, .next:hover {background-color: #f1f1f1; color: black;}	
+.brandpage-slides {max-width: 500px; position: relative; margin: auto; 	border: 5px solid #8b0000;}
+@media (max-width: 1280px) {
+.itempage-slides {max-width: 500px; position: relative; margin: auto; 	border: 5px solid #8b0000;}
+}
+@media (min-width: 1280px) {
+.itempage-slides {max-width: auto; position: relative; margin: auto; 	border: 5px solid #8b0000;}
+}
+
+/*specific to homepage*/
+.snav{margin-bottom: -30px; margin-top: 1033px;}
+.bnav {margin-bottom: -10px;}
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+.img {vertical-align: middle;}
+
+.dot {height: 5px; width: 5px; background-color: #bbb; display: inline-block; transition: background-color 1.8s ease;}
+.active {background-color: #717171;}
+.fade {animation-name: fade; animation-duration: 4.5s;}
+@keyframes fade {from {opacity: .0} to {opacity: 1}}
+@media only screen and (min-width: 1000px) {
+.index-layout {display: grid; gap: 5px; grid-template-columns: 50% 50%; width: auto;}
+.index-object {font-family: exo; padding: 5px; margin-right: 5px; font-size: auto; text-align: center;}
+.element {max-width: fit-content; margin-left: auto; margin-right: auto; z-	index: 9; position: relative;}
+.bnav {display: block; margin-bottom: -4vw;}
+.slideshow-container {max-width: 1000px; margin-right: 17%; margin-left: 17%; position: relative;}
+}
+@media only screen and (max-width: 1000px) {
+.index-layout {display: grid; grid-template-columns: 100%;}
+.index-object {padding: 10px;  font-size: auto; text-align: 	center;}
+.bnav {display: none;}
+.slideshow-container {max-width: 100%; position: relative;}
+}
+
+
+
+
+/*selector pages*/
+.option-style{padding: 10px 10px; border: 2px solid; font-size: 22px; background-color: rgba(255,0,0,0.6);}
+.option-content {padding: 5px;  text-align: center;}
+@media (max-width: 1280px) {
+.selection {display: grid; gap: 5px; grid-template-columns: 100%; width: auto;}
+}
+@media (min-width: 1280px) {
+.selection {display: grid; gap: 5px; grid-template-columns: 50% 50%; width: auto;}
+}
+
+
+/*make page*/
+.noproduct {font-family: rodchenko; font-size: 30px; text-align: center; padding: 15px 10px; margin: 25px; background-color: rgba(255,0,0,0.6); border: 3px solid; display:block}
+.brand {font-family: rodchenko; font-size: 50px; text-align: center; padding: 20px 10px; margin: 10px; background-color: rgba(255,0,0,0.6); border: 3px solid; display:block}
+.dsctext {margin: 10px;}
+.buybox {padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; margin: 10px; background-color: rgba(255, 19, 22,0.7); border: 2px solid; display:inline-block}
+.backbox {font-size: 25px; padding-top: 10px; padding-right: 20px; padding-bottom: 10px; padding-left: 20px; : left; margin: 10px; background-color: rgba(255, 19, 22,0.7); border: 2px solid; display:inline-block}
+
+/*text boxes*/
+.dscbox {background-color: rgba(255,0,0,0.6); border: 3px solid; font-family: Exo; padding: 10px;}
+
+/* services and pricing */
+.tbox {width: 100%; font-size: 18px; background-color: rgba(0,0,0,1); font-family: Exo; padding: 3px 6px; display: inline-block;}
+.service{width:910%;}
+.r1{background-color: white;}
+.r2{background-color: lightgrey;}
+
+/*search*/
+.search{background-color: gray;}
+
+/*navstyle*/
+.center {margin-left: auto; margin-right: auto;}
+.element {text-align-last: center;}
+.nav{width:100%; height: auto;}
+.dropbtn {color: black; background-color: rgb(230,50,35); font-family: rodchenko; border-radius: 5px 10px 5px 10px; width: 15vw; height: auto; border: 2px solid; padding: 6px 10px; font-size: 4.3vw;}
+.dropdown {position: relative; display: inline-block; font-family: rodchenko;}
+.dropdown a:hover { color: white; font-family: rodchenko;}
+.dropdown:hover .dropbtn {background-color: #8B0000; color: white; border-radius: 5px 10px 5px 10px; font-family: rodchenko;}
+
+
+/*navgrid*/
+@media only screen and (min-width: 1000px) {
+.navgrid {display: none;}
+.ng-logo {display: none;}
+}
+
+@media only screen and (max-width: 1000px) {
+.navgrid {display: grid; grid-template-columns: 25% 25% 25% 25%;}
+.ng-c {background-image: url(assets/images/navgrid/contact.png); background-size: cover; border: 5px solid;}
+.ng-c:hover {background-image: url(assets/images/navgrid/contact_hover.png); background-size: cover; border: 5px solid;}
+.ng-g {background-image: url(assets/images/navgrid/guns.png); background-size: cover; border: 5px solid;}
+.ng-g:hover {background-image: url(assets/images/navgrid/guns_hover.png); background-size: cover; border: 5px solid;}
+.ng-p {background-image: url(assets/images/navgrid/parts.png); background-size: cover; border: 5px solid;}
+.ng-p:hover {background-image: url(assets/images/navgrid/parts_hover.png); background-size: cover; border: 5px solid;}
+.ng-s {background-image: url(assets/images/navgrid/service.png); background-size: cover; border: 5px solid;}
+.ng-s:hover {background-image: url(assets/images/navgrid/service_hover.png); background-size: cover; border: 5px solid;}
+.ng-logo {margin-left: 30%; Margin-right: 30%; Margin-top: -50px; Margin-bottom: -30px;}
+}
+
+/*ng-nav*/
+@media only screen and (max-width: 1000px) {
+.ng-nav{width:100%; height: auto;}
+}
+@media only screen and (max-width: 1100px) {
+.ng-nav{width:50%; height: auto;}
+}
+@media only screen and (min-width: 1200px) {
+.ng-nav{width:70%; height: auto;}
+}
+@media only screen and (min-width: 1300px) {
+.ng-nav{width:60%; height: auto;}
+}
+.navgrid-nav {max-width: 100%; background-image: none; display: grid; grid-template-columns: 25% 25% 25% 25%;}
+
+.ng-c-nav {background-image: url(assets/images/navgrid/contact.png); background-size: cover; border: 5px solid;}
+.ng-c-nav:hover {background-image: url(assets/images/navgrid/contact_hover.png); background-size: cover; border: 5px solid;}
+.ng-g-nav {background-image: url(assets/images/navgrid/guns.png); background-size: cover; border: 5px solid;}
+.ng-g-nav:hover {background-image: url(assets/images/navgrid/guns_hover.png); background-size: cover; border: 5px solid;}
+.ng-p-nav {background-image: url(assets/images/navgrid/parts.png); background-size: cover; border: 5px solid;}
+.ng-p-nav:hover {background-image: url(assets/images/navgrid/parts_hover.png); background-size: cover; border: 5px solid;}
+.ng-s-nav {background-image: url(assets/images/navgrid/service.png); background-size: cover; border: 5px solid;}
+.ng-s-nav:hover {background-image: url(assets/images/navgrid/service_hover.png); background-size: cover; border: 5px solid;}
+.ng-logo-nav {margin-left: 30%; Margin-right: 30%; Margin-top: -50px; Margin-bottom: -30px;}
