@@ -16,28 +16,41 @@ h2 {color: white;}
 .dropdown:hover .dropbtn {background-color: gray; color: black;  font-family: rodchenko;}
 .dropbtn {color: black; background-color: white; font-family: rodchenko; border: 2px solid; font-size: auto;}
 
+.grid-container {display: grid; gap: 5px; grid-template-rows: 18% 18% 18% 18% 18%;	width: 	auto;}
+.grid-item {background-color: black; padding: 10px; margin-right: 5px; font-size: auto; text-align: 	center;}
+	
 </style>
 </head>
 
 <body>
-	<a href="index.html" target="_blank"><img src="nr.png" width="100%" height="auto" border="0"></a>
-<br>
-	<div class="dropdown"> 
-	<div class="a">
-	<a href="http://truenas.nrager.com" target="_parent"><div class="dropbtn">NAS</div></a>
-	</div> </div>
-<br>
-	<div class="dropdown">
-	<div class="a">
-	<a href="http://plex.nrager.com" target="_parent"><div class="dropbtn">STREAM</div></a>
-	</div> </div>
-<br>
-	<div class="dropdown">
-	<div class="a">
-	<a href="http://immich.nrager.com" target="_parent"><div class="dropbtn">GALLERY</div></a>
-	</div> </div> 
-<br>
-	<img src="linus.gif" width="auto" height="20%" border="0">
+<div class="grid-container">
+		<a href="index.html" target="_blank"><img src="nr.png" width="100%" height="auto" border="0"></a>
+	</div>
 
+	<div class="grid-container">
+		<div class="dropdown"> 
+		<div class="a">
+		<a href="http://truenas.nrager.com" target="_parent"><div class="dropbtn">NAS</div></a>
+		</div> </div>
+	</div>
+
+	<div class="grid-container">
+		<div class="dropdown">
+		<div class="a">
+		<a href="http://plex.nrager.com" target="_parent"><div class="dropbtn">STREAM</div></a>
+		</div> </div>
+	</div>
+
+	<div class="grid-container">
+		<div class="dropdown">
+		<div class="a">
+		<a href="http://immich.nrager.com" target="_parent"><div class="dropbtn">GALLERY</div></a>
+		</div> </div> 
+	</div>
+
+	<div class="grid-container">
+		<img src="linus.gif" width="auto" height="20%" border="0">
+	</div>
+</div>
 </body>
 </html>
